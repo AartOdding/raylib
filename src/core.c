@@ -1468,6 +1468,15 @@ int GetScreenHeight(void)
     return CORE.Window.currentFbo.height;
 }
 
+// Get GLFW window handle
+void *GetGLFWWindowHandle(void)
+{
+#if defined(PLATFORM_DESKTOP)
+    return CORE.Window.handle
+#endif
+    return NULL;
+}
+
 // Get native window handle
 void *GetWindowHandle(void)
 {
