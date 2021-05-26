@@ -1472,7 +1472,7 @@ int GetScreenHeight(void)
 void *GetGLFWWindowHandle(void)
 {
 #if defined(PLATFORM_DESKTOP)
-    return CORE.Window.handle
+    return CORE.Window.handle;
 #endif
     return NULL;
 }
